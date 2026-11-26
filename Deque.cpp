@@ -8,6 +8,7 @@ int main(){
     dq.push_back(2);
     dq.push_back(3);
     dq.push_back(5);
+    dq.pop_back();
 
     dq.push_front(4);//4,1,2,3,5
     cout<<dq.front()<<" "<<endl;
