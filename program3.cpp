@@ -6,6 +6,7 @@ using namespace std;
 
 int main() {
     string str;
+    cout<<"enter the string"; 
     cin >> str;
 
     stack<char> s;
@@ -23,11 +24,11 @@ int main() {
     }
 
     if (str == reverse)
-        cout << "Palindrome";
+        cout << "Palindrome"<<endl;
     else
-        cout << "Not Palindrome";
+        cout << "Not Palindrome"<<endl;
 
     return 0;
-};
+}
 
-
+ 
