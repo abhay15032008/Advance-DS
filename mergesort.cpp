@@ -2,7 +2,7 @@
 using namespace std;
  void merge(int arr[], int left, int mid, int right){
     int i=left;
-    int j=mid;
+    int j=mid+1;
     int k=0;
     int temp[100];
     while( i<=mid && j<=right){
@@ -32,7 +32,7 @@ using namespace std;
  void mergesort(int arr[], int left, int right){
     if(left<right){
         int mid=(left+right)/2;
-        mergesort(arr,left,mid)
+        mergesort(arr,left,mid);
         mergesort(arr, mid+1,right);
         merge(arr,left,mid,right);
     }
