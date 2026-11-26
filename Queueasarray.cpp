@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 class Queue{
-int arr[5];
+int arr[100];
 int front;
 int rear;
 
@@ -11,7 +11,7 @@ Queue(){
     front=0; 
 }
 void push(int x){
-    if(rear==4){
+    if(rear==99){
        cout<<"queue is full"<<endl;
        return;
     }
@@ -47,7 +47,7 @@ int main(){
     q.push(30);
     q.push(40);
     q.push(50);
-    q.push(60);
+    q.push(10);
     q.pop();
     q.pop();
 
@@ -56,6 +56,10 @@ int main(){
     }
     else{
         cout<<" Queue is empty";
+    }
+    while(!q.empty()){
+        cout<<q.top()<<" ";
+        q.pop(); 
     }
     return 0;
 }
